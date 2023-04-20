@@ -16,9 +16,9 @@
       <console name="Connection" type="STANDARD" schema="m06uf4servlets" session="Main"><![CDATA[insert into post (id_usuari,title,message,url,dat) values (5,'El desierto','asdas asdasd afafa affafaf afafaf a f af a f a  affaf',
 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Rub_al_Khali_002.JPG/800px-Rub_al_Khali_002.JPG','1111-11-11');
 
-select * from usuari;
-
 select * from post;
+
+Delete from post Where id = 3;
 
 SELECT * FROM post p INNER JOIN usuari u ON u.id=p.id_usuari ORDER BY dat DESC;]]></console>
     </connection>
