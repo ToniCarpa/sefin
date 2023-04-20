@@ -13,7 +13,7 @@ public class Constants {
     public static final String SQL_DELETE_POST =
             "DELETE FROM POST WHERE id = ?;";
     public static final String SQL_SELECT_ALL_POSTS =
-            "SELECT * FROM post p";
+            "SELECT * FROM post p INNER JOIN usuari u ON u.id=p.id_usuari ORDER BY dat DESC;";
 
     public static final String SQL_SELECT_USER_POSTS =
             "SELECT * FROM post WHERE id_usuari = ? ORDER BY dat DESC;";
