@@ -220,8 +220,6 @@ public class Dao {
                             rs.getInt("likes"),
                             rs.getString("dat"));
 
-                            //newUSUARIO
-                    //TODO: insertar valores en la tabla post con el id_usuario para que funcione
 
                     if (rs.getBytes("image") != null) {
                         post.setImage(Base64.getEncoder().encodeToString(rs.getBytes("image")));
